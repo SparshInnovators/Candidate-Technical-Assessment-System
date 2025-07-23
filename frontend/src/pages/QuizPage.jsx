@@ -7,7 +7,7 @@ const QuizPage = () => {
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState([]);
-  const [timer, setTimer] = useState(5 * 60); // 15 minutes
+  const [timer, setTimer] = useState(5 * 60); // 5 minutes
 
   const answersRef = useRef([]);
 
