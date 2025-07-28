@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Assessment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="app-container">
+        <section id="language-selection-page" class="page-container">
+            <h1>Technical Assessment Platform</h1>
+            <p>Select your preferred languages to begin the test.</p>
+            <div id="language-options" class="options-grid">
+                </div>
+            <button id="start-test-btn" class="btn">Start Test</button>
+            <p id="selection-error" class="error-message hidden"></p>
+        </section>
+
+        <section id="assessment-page" class="page-container hidden">
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <h2 id="question-text">Question text goes here...</h2>
+            <div id="options-container">
+                </div>
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="btn btn-secondary">Previous</button>
+                <button id="next-btn" class="btn">Next</button>
+                <button id="submit-btn" class="btn btn-primary hidden">Submit</button>
+            </div>
+        </section>
+
+        <section id="result-page" class="page-container hidden">
+            <h1>Assessment Complete</h1>
+            <h2>Your Score: <span id="final-score">0</span>%</h2>
+            <p id="result-message">Result message goes here.</p>
+            <div id="resume-upload-section" class="hidden">
+                <p>Congratulations! You've passed. Please upload your resume to proceed.</p>
+                <input type="file" id="resume-file" accept=".pdf,.doc,.docx">
+                <button id="upload-resume-btn" class="btn">Upload Resume</button>
+                <p id="upload-status" class="status-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

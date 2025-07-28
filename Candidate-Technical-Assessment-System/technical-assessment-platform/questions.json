@@ -1,0 +1,60 @@
+{
+  "JavaScript": [
+    {
+      "question": "What is the output of: console.log(typeof typeof 1)?",
+      "options": [
+        "number",
+        "string",
+        "undefined",
+        "object"
+      ],
+      "correctAnswer": "string"
+    },
+    {
+      "question": "Which company developed JavaScript?",
+      "options": [
+        "Microsoft",
+        "Sun Microsystems",
+        "Netscape",
+        "Google"
+      ],
+      "correctAnswer": "Netscape"
+    }
+  ],
+  "Python": [
+    {
+      "question": "What is the correct file extension for Python files?",
+      "options": [
+        ".pyth",
+        ".pt",
+        ".py",
+        ".python"
+      ],
+      "correctAnswer": ".py"
+    },
+    {
+      "question": "Which keyword is used for functions in Python?",
+      "options": [
+        "function",
+        "def",
+        "fun",
+        "define"
+      ],
+      "correctAnswer": "def"
+    }
+  ],
+  "HTML": [
+    {
+        "question": "What does HTML stand for?",
+        "options": ["Hyper Text Markup Language", "High Text Markup Language", "Hyper Tabular Markup Language", "None of the above"],
+        "correctAnswer": "Hyper Text Markup Language"
+    }
+  ],
+  "CSS": [
+    {
+        "question": "Which property is used to change the background color?",
+        "options": ["color", "bgcolor", "background-color", "background"],
+        "correctAnswer": "background-color"
+    }
+  ]
+}
