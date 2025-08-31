@@ -1,182 +1,126 @@
 # Candidate Technical Assessment System
-## Student Development Task
 
-### Task Title
-Build a Dynamic Technical Assessment Platform
+This web application helps organizations shortlist candidates by assessing their technical knowledge through a timed multiple-choice quiz. Based on their score, candidates are prompted to upload their resume.
 
-### Task Description
-Create a web application that helps in candidate shortlisting through a technical assessment process. Candidates can select their preferred programming languages, take a multiple-choice test, and based on their performance, get access to resume upload functionality.
+---
+##  Features
 
-### Core Features
-1. **Language Selection Page**
-   - List of programming languages to choose from
-   - Multiple selection allowed
-   - Start test button
+-  Multi-language selection (at least 2 required)
+-  Timed MCQ assessment (5 minutes, auto-submit)
+-  Score evaluation (7 out of 10 to pass)
+-  Resume upload (PDF/DOC/DOCX if passed)
+-  Auto-submit and result display on timeout
+-  Fully responsive design using Tailwind CSS (CLI)
 
-2. **Assessment Page**
-   - Multiple choice questions based on selected languages
-   - Next/Previous question navigation
-   - Submit test button
-   - Display current score (optional)
+---
 
-3. **Result Page**
-   - Display final score
-   - If score meets threshold:
-     - Show resume upload option
-     - Display success message
-   - If score below threshold:
-     - Show "Try again later" message
+##  Tech Stack
 
-### Technical Requirements
-- Frontend: HTML, CSS, JavaScript (framework of your choice)
-- Backend: Any language/framework
-- Store questions and answers
-- Basic user session management
-- File upload functionality for resume
+| Layer       | Technology                     |
+|-------------|--------------------------------|
+| Frontend    | React.js, Tailwind CSS (CLI)   |
+| Backend     | Node.js, Express.js, Multer    |
+| Styling     | Tailwind CSS (via CLI)         |
+| File Upload | Resume storage via `multer`    |
 
-### Question Format Example
-```javascript
-{
-    question: "What is the output of: console.log(typeof typeof 1)?",
-    options: [
-        "number",
-        "string",
-        "undefined",
-        "object"
-    ],
-    correctAnswer: "string",
-    language: "JavaScript"
-}
-```
+Note:- the resume that candidate will upload will get uploaded inside the folder path i.e Candidate-Technical-Assessment-System/backend/uploads/ 
 
-### Steps to Complete
+---
+## Folder Structure
+candidate-assessment/
+├── backend/
+│ ├── server.js
+│ ├── questions.js
+│ └── uploads/
+├── frontend/
+│ ├── public/
+| | |── index.html
+│ │ └── output.css
+│ ├── src/
+│ │ ├── App.js
+│ │ ├── index.js
+│ │ └── pages/
+│ │ ├── LanguageSelection.jsx
+│ │ ├── QuizPage.jsx
+│ │ └── ResultPage.jsx
+│ ├── styles/
+│ │ └── input.css
+│ ├── package-lock.json
+│ └── package.json
+└── README.md
 
-1. **Create Landing Page**
-   - Design language selection interface
-   - Implement multi-select functionality
-   - Add validation before test starts
+---
 
-2. **Implement Test Interface**
-   - Create question display component
-   - Add answer selection functionality
-   - Implement navigation between questions
-   - Add score calculation
+##  Setup Instructions
 
-3. **Build Result System**
-   - Create score display
-   - Implement conditional resume upload
-   - Add file type validation for resume
+###  Prerequisites
 
-4. **Add Basic Styling**
-   - Make interface responsive
-   - Add loading states
-   - Include progress indicators
-   - Style form elements
+- Node.js v16+
+- npm
 
-### Bonus Features
-1. **Timer System**
-   - Add countdown timer for each question
-   - Auto-submit when time expires
-   - Display time remaining
+---
 
-2. **Dynamic Question Sets**
-   - Implement random question selection
-   - Ensure no question repetition
-   - Balance questions across selected languages
+###  Backend Setup
+1. clone the repository
+cd backend
+npm install
+node server.js
+-> Server runs at http://localhost:5000
 
-3. **Additional Enhancements**
-   - Progress bar
-   - Score analytics
-   - Review wrong answers
-   - Save partial progress
+### frontend setup
+cd frontend
+npm install
+# In one terminal, compile Tailwind:
+npx tailwindcss -i ./styles/input.css -o ./public/output.css --watch
 
-### Notes
-- Maintain clean code structure
-- Include proper error handling
-- Focus on user experience
-- Ensure mobile responsiveness
-- Include loading states
-- Add proper validation messages
+# In another terminal, start React app:
+npm start
+=> React runs at http://localhost:3000
 
-### Example Data Structure
+Note :- Make sure you keep Tailwind CLI watching to update output.css.
 
-```javascript
-// Question Bank Example
+### Sample Questions Format (backend/questions.js)
 const questions = {
-    "JavaScript": [
-        {
-            question: "What is closure in JavaScript?",
-            options: ["...", "...", "...", "..."],
-            correctAnswer: 2
-        },
-        // More questions...
-    ],
-    "Python": [
-        {
-            question: "What is the difference between list and tuple?",
-            options: ["...", "...", "...", "..."],
-            correctAnswer: 1
-        },
-        // More questions...
-    ]
-}
-```
+  JavaScript: [
+    {
+      question: "What is the output of typeof typeof 1?",
+      options: ["number", "string", "undefined", "object"],
+      correctAnswer: "string"
+    },
+    // More JS questions
+  ],
+  Python: [
+    {
+      question: "What is the result of 2**3?",
+      options: ["6", "8", "9", "Error"],
+      correctAnswer: "8"
+    },
+    // More Python questions
+  ],
+  // Java, C++, SQL...
+};
 
-### Submission Requirements
-- GitHub repository containing:
-  - Source code
-  - Setup instructions
-  - Sample questions JSON
-  - README file
+###  Resume Upload info
+Supported formats: .pdf, .doc, .docx
+Saved in: backend/uploads/
 
-### Evaluation Criteria
-- Code organization
-- User interface design
-- Error handling
-- Feature implementation
-- Code commenting
-- Mobile responsiveness
+Notes:-
+-- Tailwind is integrated using CLI via output.css
 
-### Time Estimate
-- Basic Version: 4-5 hours
-- With Bonus Features: 8-10 hours
+-- All questions are stored locally in a JS file (questions.js)
+(note:- we can also use mongodb to store questions so that we add questions dynamically)
 
-### Technical Tips
-1. **Question Management**
-   - Store questions in JSON format
-   - Include at least 10 questions per language
-   - Maintain proper question categorization
+-- Auto-submit logic triggers when timer hits 0
 
-2. **Session Handling**
-   - Track user progress
-   - Handle page refreshes
-   - Maintain score data
+-- Answers are scored immediately and passed to Result page
 
-3. **File Upload**
-   - Limit file types to PDF, DOC, DOCX
-   - Implement file size validation
-   - Add upload progress indicator
+### Minimum Requirements for candidate to pass 
+ -- Select at least 2 languages
 
-4. **For Timer Feature**
-   ```javascript
-   // Timer example structure
-   {
-       questionId: 1,
-       timeLimit: 60, // seconds
-       timeRemaining: 60,
-       status: "active"
-   }
-   ```
+ -- Take 10-question quiz
 
-5. **For Random Questions**
-   - Implement shuffle algorithm
-   - Ensure fair distribution of difficulty
-   - Track used questions
+ -- Score 7/10 or higher
 
-### Minimum Requirements to Pass
-- Working language selection
-- Functional quiz system
-- Score calculation
-- Conditional resume upload
-- Basic error handling
-- Mobile responsive design
+ -- Upload resume if eligible
+
+

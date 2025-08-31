@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    image: my-backend-image
+    container_name: my-backend-container
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend/uploads:/app/uploads
+    restart: always
+
+  frontend:
+    build: ./frontend
+    image: my-frontend-image
+    container_name: my-frontend-container
+    ports:
+      - "80:80"
+    restart: always
