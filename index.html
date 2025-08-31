@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Assessment</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Sweet alert -->
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- custom css -->
+  <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body>
+  <div class="container mt-4">
+  <!-- Language Selection Page -->
+<div id="languageSection" class="row justify-content-center">
+  <div class="col-md-10 col-lg-8">
+    <div class="card">
+      <div class="card-header">Select Your Preferred Languages</div>
+      <div class="card-body">
+        <div class="row g-3 mb-4">
+          <div class="col-md-4">
+            <div class="language-card" data-lang="JavaScript">
+              <input type="checkbox" id="js" class="form-check-input d-none" value="JavaScript" />
+              <label for="js" class="form-check-label w-100">JavaScript</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="language-card" data-lang="Python">
+              <input type="checkbox" id="py" class="form-check-input d-none" value="Python" />
+              <label for="py" class="form-check-label w-100">Python</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="language-card" data-lang="Java">
+              <input type="checkbox" id="java" class="form-check-input d-none" value="Java" />
+              <label for="java" class="form-check-label w-100">Java</label>
+            </div>
+          </div>
+   
+        </div>
+
+        <!-- Centered Start Button -->
+        <div class="d-flex justify-content-center mt-3">
+          <button class="btn btn-success btn-lg" onclick="startTest()">Start Test</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quiz Page -->
+<div id="quizSection" class="row justify-content-center d-none">
+  <div class="col-md-10 col-lg-8">
+    <div class="card">
+      <div class="card-header">Question <span id="questionNumber">1</span></div>
+      <div class="card-body">
+        <p class="quiz-question" id="questionText"></p>
+        <ul class="options-group" id="optionsContainer"></ul>
+
+        <!-- Grouped Previous & Next, Submit far right -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <div class="d-flex gap-2">
+            <button id="prevBtn" class="btn btn-secondary btn-lg" onclick="prevQuestion()">Back</button>
+            <button id="nextBtn" class="btn btn-secondary btn-lg" onclick="nextQuestion()">Next</button>
+          </div>
+          <button id="submitBtn" class="btn btn-primary btn-lg" onclick="submitTest()" style="display: none;">Submit</button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress mt-3">
+          <div class="progress-bar progress-bar-fill" id="progressBar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+   
+    <!-- Result Page -->
+<div id="resultSection" class="row justify-content-center d-none">
+  <div class="col-md-10 col-lg-8">
+    <div class="card">
+      <div class="card-header">Assessment Complete</div>
+      <div class="card-body text-center">
+        <!-- Score Display -->
+        <div class="p-4 bg-light rounded mb-4">
+          <h4>Your Score</h4>
+          <h2 class="result-score" id="scoreValue">0 / 0</h2>
+          <p class="text-muted" id="scorePercent"></p>
+        </div>
+
+        <!-- Success Message -->
+        <div id="successMsg" class="alert alert-success d-none" role="alert">
+          <h5>🎉 Congratulations!</h5>
+          <p>You've met the threshold. Please upload your resume to proceed.</p>
+        </div>
+
+        <!-- Resume Upload -->
+        <div id="resumeUpload" class="resume-upload d-none">
+          <h5>Upload Your Resume</h5>
+          <input type="file" class="form-control mb-2" accept=".pdf,.doc,.docx" id="resumeFile" />
+          <button class="btn btn-primary" onclick="uploadResume()">Upload Resume</button>
+        </div>
+
+        <!-- Failure Message -->
+        <div id="tryAgainMsg" class="alert alert-warning d-none" role="alert">
+          <h5>😔 Not Quite There</h5>
+          <p>Unfortunately, your score didn't meet the threshold. Please try again later.</p>
+        </div>
+
+    
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!--  SweetAlert2 JS in the -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+<!-- custom js -->
+<script src="./script.js"></script>
+
+</body>
+</html>

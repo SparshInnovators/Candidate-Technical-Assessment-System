@@ -1,0 +1,162 @@
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px 0;
+    }
+
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .card-header {
+      background-color: #0d6efd;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-weight: 600;
+      border-bottom: none;
+    }
+
+    .btn-primary {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+      border-radius: 6px;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+      border-color: #6c757d;
+      border-radius: 6px;
+   
+    
+    }
+
+    .btn-success {
+      background-color: #28a745;
+      border-color: #28a745;
+      border-radius: 6px;
+    }
+
+    .language-card {
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .language-card:hover {
+      background-color: #f8f9fa;
+      border-color: #0d6efd;
+    }
+
+    .language-card.active {
+      background-color: #e3f2fd;
+      border-color: #0d6efd;
+    }
+
+    .quiz-question {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .options-group {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .option-item {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #dee2e6;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .option-item:hover {
+      background-color: #f8f9fa;
+    }
+
+    .option-item.selected {
+      background-color: #e3f2fd;
+      border-color: #0d6efd;
+      font-weight: 500;
+    }
+
+    .progress-bar {
+      height: 10px;
+      border-radius: 5px;
+      background-color: #e9ecef;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      border-radius: 5px;
+      background-color: #0d6efd;
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .result-score {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0d6efd;
+    }
+
+    .resume-upload {
+      margin-top: 1.5rem;
+      border: 2px dashed #0d6efd;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+
+    .resume-upload h5 {
+      margin-top: 0;
+      color: #0d6efd;
+    }
+  .btn-group-lg>.btn, .btn-lg {
+    font-size: 1rem;
+  }
+
+
+.options-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: item;
+}
+
+.option-item {
+  display: block; /* Ensures proper block-level rendering */
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: white;
+  color: #333;
+}

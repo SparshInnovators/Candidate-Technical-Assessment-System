@@ -180,3 +180,17 @@ const questions = {
 - Conditional resume upload
 - Basic error handling
 - Mobile responsive design
+
+
+### My Implementation
+- Built a dynamic technical assessment platform using HTML, CSS,Bootstrap and JavaScript.
+
+- Implemented language selection, multiple-choice quiz interface, and score calculation.
+
+- Added conditional resume upload based on candidate performance.
+
+- Validated inputs and ensured responsive design for mobile and desktop.
+
+- Used JSON to store questions and answers dynamically.
+
+- Added responsiveness across all the screen sizes.
