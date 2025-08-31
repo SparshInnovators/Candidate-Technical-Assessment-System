@@ -1,0 +1,30 @@
+{
+  "JavaScript": [
+    {
+      "id": "js1",
+      "question": "What is closure in JavaScript?",
+      "options": ["Function inside function", "Variable type", "Array method", "Object property"],
+      "answer": 0
+    },
+    {
+      "id": "js2",
+      "question": "What is typeof NaN?",
+      "options": ["number", "NaN", "undefined", "object"],
+      "answer": 0
+    }
+  ],
+  "Python": [
+    {
+      "id": "py1",
+      "question": "Difference between list and tuple?",
+      "options": ["List immutable", "Tuple immutable", "Both mutable", "None"],
+      "answer": 1
+    },
+    {
+      "id": "py2",
+      "question": "Python function keyword?",
+      "options": ["func", "def", "function", "lambda"],
+      "answer": 1
+    }
+  ]
+}

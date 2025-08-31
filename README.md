@@ -1,182 +1,177 @@
-# Candidate Technical Assessment System
-## Student Development Task
+Candidate Technical Assessment System
+Project Title
 
-### Task Title
-Build a Dynamic Technical Assessment Platform
+Dynamic Technical Assessment Platform
 
-### Task Description
-Create a web application that helps in candidate shortlisting through a technical assessment process. Candidates can select their preferred programming languages, take a multiple-choice test, and based on their performance, get access to resume upload functionality.
+Project Description
 
-### Core Features
-1. **Language Selection Page**
-   - List of programming languages to choose from
-   - Multiple selection allowed
-   - Start test button
+This web application enables candidate shortlisting via a technical assessment process. Candidates can:
 
-2. **Assessment Page**
-   - Multiple choice questions based on selected languages
-   - Next/Previous question navigation
-   - Submit test button
-   - Display current score (optional)
+Select one or more programming languages
 
-3. **Result Page**
-   - Display final score
-   - If score meets threshold:
-     - Show resume upload option
-     - Display success message
-   - If score below threshold:
-     - Show "Try again later" message
+Take a multiple-choice quiz based on selected languages
 
-### Technical Requirements
-- Frontend: HTML, CSS, JavaScript (framework of your choice)
-- Backend: Any language/framework
-- Store questions and answers
-- Basic user session management
-- File upload functionality for resume
+Track progress with a timer and progress bar
 
-### Question Format Example
-```javascript
+Review incorrectly answered questions
+
+Upload their resume if they pass the quiz
+
+The platform includes optional features like random question selection, countdown timers, partial progress save, and mobile-responsive design.
+
+Features
+Core Features
+
+Language Selection Page
+
+Multi-language selection (Python, JavaScript, etc.)
+
+Validation to ensure at least one language is selected
+
+Starts the quiz upon submission
+
+Assessment Page
+
+Displays multiple-choice questions dynamically based on selected languages
+
+Next/Previous question navigation
+
+Countdown timer per question
+
+Progress bar and partial progress save in browser storage
+
+Result Page
+
+Shows final score and pass/fail status
+
+Displays wrongly answered questions with correct answers
+
+Conditional resume upload for candidates who pass
+
+Resume upload supports PDF, DOC, DOCX with size validation
+
+Bonus Features
+
+Timer with auto-submit on expiration
+
+Randomized question selection with no repetition
+
+Progress tracking across sessions
+
+Review wrong answers after submission
+
+Technical Requirements
+
+Frontend: HTML, CSS, JavaScript
+
+Backend: Node.js with Express.js
+
+Session Management: express-session
+
+File Upload: Multer for resume uploads
+
+Data Storage: JSON file for question bank
+
+Example Question Format
 {
-    question: "What is the output of: console.log(typeof typeof 1)?",
-    options: [
-        "number",
-        "string",
-        "undefined",
-        "object"
-    ],
-    correctAnswer: "string",
-    language: "JavaScript"
+  "JavaScript": [
+    {
+      "id": "js1",
+      "question": "What is closure in JavaScript?",
+      "options": ["Function inside function", "Variable type", "Array method", "Object property"],
+      "answer": 0
+    }
+  ],
+  "Python": [
+    {
+      "id": "py1",
+      "question": "Difference between list and tuple?",
+      "options": ["List immutable", "Tuple immutable", "Both mutable", "None"],
+      "answer": 1
+    }
+  ]
 }
-```
 
-### Steps to Complete
+Project Setup Instructions
 
-1. **Create Landing Page**
-   - Design language selection interface
-   - Implement multi-select functionality
-   - Add validation before test starts
+Clone the repository:
 
-2. **Implement Test Interface**
-   - Create question display component
-   - Add answer selection functionality
-   - Implement navigation between questions
-   - Add score calculation
+git clone <repository-url>
 
-3. **Build Result System**
-   - Create score display
-   - Implement conditional resume upload
-   - Add file type validation for resume
 
-4. **Add Basic Styling**
-   - Make interface responsive
-   - Add loading states
-   - Include progress indicators
-   - Style form elements
+Install dependencies:
 
-### Bonus Features
-1. **Timer System**
-   - Add countdown timer for each question
-   - Auto-submit when time expires
-   - Display time remaining
+npm install
 
-2. **Dynamic Question Sets**
-   - Implement random question selection
-   - Ensure no question repetition
-   - Balance questions across selected languages
 
-3. **Additional Enhancements**
-   - Progress bar
-   - Score analytics
-   - Review wrong answers
-   - Save partial progress
+Start the server:
 
-### Notes
-- Maintain clean code structure
-- Include proper error handling
-- Focus on user experience
-- Ensure mobile responsiveness
-- Include loading states
-- Add proper validation messages
+npm start
 
-### Example Data Structure
 
-```javascript
-// Question Bank Example
-const questions = {
-    "JavaScript": [
-        {
-            question: "What is closure in JavaScript?",
-            options: ["...", "...", "...", "..."],
-            correctAnswer: 2
-        },
-        // More questions...
-    ],
-    "Python": [
-        {
-            question: "What is the difference between list and tuple?",
-            options: ["...", "...", "...", "..."],
-            correctAnswer: 1
-        },
-        // More questions...
-    ]
-}
-```
+Open browser at:
 
-### Submission Requirements
-- GitHub repository containing:
-  - Source code
-  - Setup instructions
-  - Sample questions JSON
-  - README file
+http://localhost:3000
 
-### Evaluation Criteria
-- Code organization
-- User interface design
-- Error handling
-- Feature implementation
-- Code commenting
-- Mobile responsiveness
 
-### Time Estimate
-- Basic Version: 4-5 hours
-- With Bonus Features: 8-10 hours
+Select languages → Take quiz → Review wrong answers → Upload resume if passed
 
-### Technical Tips
-1. **Question Management**
-   - Store questions in JSON format
-   - Include at least 10 questions per language
-   - Maintain proper question categorization
+Folder Structure
+public/          # Frontend HTML, CSS, JS
+uploads/         # Resume uploads
+questions.json   # Quiz question bank
+server.js        # Backend
+package.json
+README.md
 
-2. **Session Handling**
-   - Track user progress
-   - Handle page refreshes
-   - Maintain score data
+Technical Notes
 
-3. **File Upload**
-   - Limit file types to PDF, DOC, DOCX
-   - Implement file size validation
-   - Add upload progress indicator
+Session Handling: Tracks quiz progress and results
 
-4. **For Timer Feature**
-   ```javascript
-   // Timer example structure
-   {
-       questionId: 1,
-       timeLimit: 60, // seconds
-       timeRemaining: 60,
-       status: "active"
-   }
-   ```
+Partial Save: Stores answers in browser storage to prevent data loss
 
-5. **For Random Questions**
-   - Implement shuffle algorithm
-   - Ensure fair distribution of difficulty
-   - Track used questions
+Resume Upload: Only allowed for passed candidates; validates file type and size
 
-### Minimum Requirements to Pass
-- Working language selection
-- Functional quiz system
-- Score calculation
-- Conditional resume upload
-- Basic error handling
-- Mobile responsive design
+Timer: Counts down per question and auto-submits when expired
+
+Random Questions: Shuffled and balanced across selected languages
+
+Evaluation Criteria
+
+Functional language selection
+
+Working quiz system with score calculation
+
+Timer and progress tracking
+
+Conditional resume upload
+
+Wrong-answer review
+
+Mobile responsiveness
+
+Clean, well-commented code
+
+Minimum Requirements Completed
+
+Multi-language selection page
+
+Quiz interface with navigation
+
+Score calculation and conditional resume upload
+
+Basic error handling
+
+Mobile-responsive design
+
+Future Enhancements
+
+React-based UI for better interactivity
+
+Dashboard for candidate analytics
+
+Difficulty-based question balancing
+
+Multiple quiz attempts per user
+
+Enhanced UI/UX and styling
