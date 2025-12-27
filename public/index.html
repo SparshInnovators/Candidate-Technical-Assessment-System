@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Assessment - Language Selection</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Technical Assessment Platform</h1>
+            <p class="subtitle">Select your preferred programming languages to begin</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Choose Programming Languages</h2>
+                    <p>You can select multiple languages. Questions will be selected from your chosen languages.</p>
+                </div>
+
+                <form id="languageForm">
+                    <div id="languageList" class="language-list">
+                        <!-- Languages will be loaded dynamically -->
+                    </div>
+
+                    <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+                    <div class="form-actions">
+                        <button type="submit" id="startTestBtn" class="btn btn-primary">
+                            <span class="btn-text">Start Test</span>
+                            <span class="btn-loader" style="display: none;">Loading...</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="info-box">
+                <h3>Test Information</h3>
+                <ul>
+                    <li>You can select one or more programming languages</li>
+                    <li>Each test contains up to 10 questions</li>
+                    <li>You need to score at least 60% to pass</li>
+                    <li>Passing candidates can upload their resume</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="startTestModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h3>Confirm Test Start</h3>
+            <div id="modalTestInfo">
+                <p><strong>Selected Languages:</strong> <span id="modalLanguages"></span></p>
+                <div class="test-instructions">
+                    <h4>Test Instructions:</h4>
+                    <ul>
+                        <li>You will be presented with up to 10 multiple-choice questions</li>
+                        <li>You can navigate between questions using Previous/Next buttons</li>
+                        <li>You can review and change your answers before submitting</li>
+                        <li>You need to score at least 60% to pass</li>
+                        <li>Once you submit, you cannot retake the test with the same session</li>
+                        <li>Make sure you have a stable internet connection</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button id="confirmStartBtn" class="btn btn-success">Yes, Start Test</button>
+                <button id="cancelStartBtn" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

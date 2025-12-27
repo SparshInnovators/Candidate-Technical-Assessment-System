@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Assessment - Results</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Test Results</h1>
+        </header>
+
+        <main>
+            <div id="loadingState" class="loading-state">
+                <div class="spinner"></div>
+                <p>Loading results...</p>
+            </div>
+
+            <div id="resultContainer" style="display: none;">
+                <!-- Score Summary -->
+                <div class="card result-card">
+                    <div class="result-header">
+                        <h2>Your Score</h2>
+                        <div class="score-circle" id="scoreCircle">
+                            <div class="score-value" id="scorePercentage">0%</div>
+                        </div>
+                    </div>
+
+                    <div class="score-details">
+                        <div class="score-item">
+                            <span class="score-label">Correct Answers:</span>
+                            <span class="score-value-large" id="correctAnswers">0</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="score-label">Total Questions:</span>
+                            <span class="score-value-large" id="totalQuestionsResult">0</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="score-label">Percentage:</span>
+                            <span class="score-value-large" id="scorePercent">0%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pass/Fail Message -->
+                <div id="passFailMessage" class="card message-card">
+                    <!-- Will be populated dynamically -->
+                </div>
+
+                <!-- Resume Upload Section (only if passed) -->
+                <div id="resumeUploadSection" class="card upload-card" style="display: none;">
+                    <h3>Upload Your Resume</h3>
+                    <p>Congratulations! Please upload your resume to proceed.</p>
+                    
+                    <form id="resumeUploadForm">
+                        <div class="file-upload-container">
+                            <input type="file" id="resumeFile" name="resume" accept=".pdf,.doc,.docx" required>
+                            <label for="resumeFile" class="file-upload-label">
+                                <span class="file-upload-text">Choose File</span>
+                                <span class="file-upload-hint">PDF, DOC, or DOCX (Max 5MB)</span>
+                            </label>
+                            <span id="fileName" class="file-name"></span>
+                        </div>
+
+                        <div id="uploadError" class="error-message" style="display: none;"></div>
+                        <div id="uploadSuccess" class="success-message" style="display: none;"></div>
+
+                        <div class="form-actions">
+                            <button type="submit" id="uploadBtn" class="btn btn-primary">
+                                <span class="btn-text">Upload Resume</span>
+                                <span class="btn-loader" style="display: none;">Uploading...</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Review Answers Section (optional enhancement) -->
+                <div class="card review-card">
+                    <h3>Review Your Answers</h3>
+                    <div id="reviewContainer">
+                        <!-- Will be populated with question review -->
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="result-actions">
+                    <button id="retakeTestBtn" class="btn btn-primary">Take Test Again</button>
+                    <button id="homeBtn" class="btn btn-secondary">Go to Home</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/result.js"></script>
+</body>
+</html>

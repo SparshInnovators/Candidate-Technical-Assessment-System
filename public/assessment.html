@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Assessment - Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="test-header">
+            <div class="header-content">
+                <h1>Technical Assessment</h1>
+                <div class="test-info">
+                    <span class="score-display">Score: <span id="currentScore">0</span>/<span id="totalQuestions">0</span></span>
+                    <span class="question-counter">Question <span id="currentQuestionNum">1</span> of <span id="totalQuestionsCounter">0</span></span>
+                </div>
+            </div>
+        </header>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <main>
+            <div class="card question-card">
+                <div class="question-header">
+                    <span class="language-badge" id="questionLanguage">Language</span>
+                    <span class="question-number">Question <span id="questionNumDisplay">1</span></span>
+                </div>
+
+                <div id="loadingState" class="loading-state">
+                    <div class="spinner"></div>
+                    <p>Loading questions...</p>
+                </div>
+
+                <div id="questionContainer" style="display: none;">
+                    <h2 class="question-text" id="questionText">Question text will appear here</h2>
+
+                    <div class="options-container" id="optionsContainer">
+                        <!-- Options will be loaded dynamically -->
+                    </div>
+
+                    <div class="question-actions">
+                        <button id="prevBtn" class="btn btn-secondary" disabled>Previous</button>
+                        <button id="nextBtn" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-actions">
+                <button id="submitTestBtn" class="btn btn-success btn-large">
+                    Submit Test
+                </button>
+                <button id="exitTestBtn" class="btn btn-secondary btn-outline">
+                    Exit Test
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="submitModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h3>Submit Test</h3>
+            <p>Are you sure you want to submit your test? This action cannot be undone.</p>
+            <div class="modal-actions">
+                <button id="confirmSubmitBtn" class="btn btn-success">Yes, Submit</button>
+                <button id="cancelSubmitBtn" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/assessment.js"></script>
+</body>
+</html>

@@ -1,0 +1,513 @@
+{
+  "JavaScript": [
+    {
+      "question": "What is the output of: console.log(typeof typeof 1)?",
+      "options": ["number", "string", "undefined", "object"],
+      "correctAnswer": "string",
+      "language": "JavaScript"
+    },
+    {
+      "question": "What is closure in JavaScript?",
+      "options": [
+        "A function that has access to variables in its outer scope",
+        "A way to close a browser window",
+        "A method to hide variables",
+        "A type of loop"
+      ],
+      "correctAnswer": "A function that has access to variables in its outer scope",
+      "language": "JavaScript"
+    },
+    {
+      "question": "What does 'this' refer to in a JavaScript function?",
+      "options": [
+        "The function itself",
+        "The object that owns the function",
+        "The global window object",
+        "It depends on how the function is called"
+      ],
+      "correctAnswer": "It depends on how the function is called",
+      "language": "JavaScript"
+    },
+    {
+      "question": "Which method is used to add an element to the end of an array?",
+      "options": ["push()", "pop()", "shift()", "unshift()"],
+      "correctAnswer": "push()",
+      "language": "JavaScript"
+    },
+    {
+      "question": "What is the purpose of 'use strict' in JavaScript?",
+      "options": [
+        "To enable strict mode which catches common coding errors",
+        "To improve performance",
+        "To allow use of new syntax",
+        "To disable error checking"
+      ],
+      "correctAnswer": "To enable strict mode which catches common coding errors",
+      "language": "JavaScript"
+    },
+    {
+      "question": "What is the difference between == and === in JavaScript?",
+      "options": [
+        "== compares values and types, === compares only values",
+        "== compares values, === compares values and types",
+        "There is no difference",
+        "== is deprecated"
+      ],
+      "correctAnswer": "== compares values, === compares values and types",
+      "language": "JavaScript"
+    },
+    {
+      "question": "What is a Promise in JavaScript?",
+      "options": [
+        "A function that returns a value",
+        "An object representing the eventual completion of an async operation",
+        "A type of variable",
+        "A way to declare functions"
+      ],
+      "correctAnswer": "An object representing the eventual completion of an async operation",
+      "language": "JavaScript"
+    },
+    {
+      "question": "Which of the following is used to handle asynchronous operations?",
+      "options": ["async/await", "sync/wait", "parallel/run", "thread/join"],
+      "correctAnswer": "async/await",
+      "language": "JavaScript"
+    },
+    {
+      "question": "What does the map() method do in JavaScript?",
+      "options": [
+        "Creates a new array with results of calling a function on every element",
+        "Removes elements from an array",
+        "Sorts an array",
+        "Combines two arrays"
+      ],
+      "correctAnswer": "Creates a new array with results of calling a function on every element",
+      "language": "JavaScript"
+    },
+    {
+      "question": "What is hoisting in JavaScript?",
+      "options": [
+        "Moving variable and function declarations to the top of their scope",
+        "A way to lift heavy objects",
+        "A method to hide code",
+        "A type of loop"
+      ],
+      "correctAnswer": "Moving variable and function declarations to the top of their scope",
+      "language": "JavaScript"
+    },
+    {
+      "question": "What is the purpose of the let keyword?",
+      "options": [
+        "To declare block-scoped variables",
+        "To declare global variables",
+        "To declare constants",
+        "To declare functions"
+      ],
+      "correctAnswer": "To declare block-scoped variables",
+      "language": "JavaScript"
+    },
+    {
+      "question": "What does JSON.parse() do?",
+      "options": [
+        "Converts a JSON string to a JavaScript object",
+        "Converts a JavaScript object to a JSON string",
+        "Validates JSON syntax",
+        "Encrypts JSON data"
+      ],
+      "correctAnswer": "Converts a JSON string to a JavaScript object",
+      "language": "JavaScript"
+    }
+  ],
+  "Python": [
+    {
+      "question": "What is the difference between list and tuple in Python?",
+      "options": [
+        "Lists are mutable, tuples are immutable",
+        "Tuples are mutable, lists are immutable",
+        "There is no difference",
+        "Lists can only store numbers"
+      ],
+      "correctAnswer": "Lists are mutable, tuples are immutable",
+      "language": "Python"
+    },
+    {
+      "question": "What is a dictionary in Python?",
+      "options": [
+        "A collection of key-value pairs",
+        "A list of words",
+        "A type of array",
+        "A function"
+      ],
+      "correctAnswer": "A collection of key-value pairs",
+      "language": "Python"
+    },
+    {
+      "question": "What is the output of: print(3 // 2) in Python?",
+      "options": ["1.5", "1", "2", "Error"],
+      "correctAnswer": "1",
+      "language": "Python"
+    },
+    {
+      "question": "What is a list comprehension in Python?",
+      "options": [
+        "A concise way to create lists",
+        "A way to read files",
+        "A method to sort lists",
+        "A type of loop"
+      ],
+      "correctAnswer": "A concise way to create lists",
+      "language": "Python"
+    },
+    {
+      "question": "What does the __init__ method do in Python?",
+      "options": [
+        "Initializes a new instance of a class",
+        "Terminates a program",
+        "Imports modules",
+        "Defines a function"
+      ],
+      "correctAnswer": "Initializes a new instance of a class",
+      "language": "Python"
+    },
+    {
+      "question": "What is the difference between append() and extend() for lists?",
+      "options": [
+        "append() adds a single item, extend() adds multiple items",
+        "extend() adds a single item, append() adds multiple items",
+        "They are the same",
+        "append() is for tuples only"
+      ],
+      "correctAnswer": "append() adds a single item, extend() adds multiple items",
+      "language": "Python"
+    },
+    {
+      "question": "What is a lambda function in Python?",
+      "options": [
+        "An anonymous function defined with the lambda keyword",
+        "A large function",
+        "A function that never ends",
+        "A function that imports modules"
+      ],
+      "correctAnswer": "An anonymous function defined with the lambda keyword",
+      "language": "Python"
+    },
+    {
+      "question": "What does the 'with' statement do in Python?",
+      "options": [
+        "Provides a way to ensure proper resource management",
+        "Opens a file",
+        "Defines a variable",
+        "Imports a module"
+      ],
+      "correctAnswer": "Provides a way to ensure proper resource management",
+      "language": "Python"
+    },
+    {
+      "question": "What is the purpose of __str__ method in Python?",
+      "options": [
+        "Returns a string representation of an object",
+        "Converts a string to an integer",
+        "Splits a string",
+        "Joins strings"
+      ],
+      "correctAnswer": "Returns a string representation of an object",
+      "language": "Python"
+    },
+    {
+      "question": "What does the range() function return in Python 3?",
+      "options": [
+        "A range object (iterable)",
+        "A list of numbers",
+        "A tuple",
+        "A dictionary"
+      ],
+      "correctAnswer": "A range object (iterable)",
+      "language": "Python"
+    },
+    {
+      "question": "What is PEP 8?",
+      "options": [
+        "Python Enhancement Proposal for code style",
+        "A Python library",
+        "A Python version",
+        "A Python framework"
+      ],
+      "correctAnswer": "Python Enhancement Proposal for code style",
+      "language": "Python"
+    },
+    {
+      "question": "What is the difference between == and is in Python?",
+      "options": [
+        "== compares values, is compares object identity",
+        "is compares values, == compares object identity",
+        "They are the same",
+        "== is deprecated"
+      ],
+      "correctAnswer": "== compares values, is compares object identity",
+      "language": "Python"
+    }
+  ],
+  "Java": [
+    {
+      "question": "What is the difference between == and .equals() in Java?",
+      "options": [
+        "== compares references, .equals() compares values",
+        ".equals() compares references, == compares values",
+        "They are the same",
+        "== is deprecated"
+      ],
+      "correctAnswer": "== compares references, .equals() compares values",
+      "language": "Java"
+    },
+    {
+      "question": "What is the default value of a boolean variable in Java?",
+      "options": ["false", "true", "null", "0"],
+      "correctAnswer": "false",
+      "language": "Java"
+    },
+    {
+      "question": "What is the difference between StringBuffer and StringBuilder?",
+      "options": [
+        "StringBuffer is thread-safe, StringBuilder is not",
+        "StringBuilder is thread-safe, StringBuffer is not",
+        "They are the same",
+        "StringBuffer is deprecated"
+      ],
+      "correctAnswer": "StringBuffer is thread-safe, StringBuilder is not",
+      "language": "Java"
+    },
+    {
+      "question": "What is inheritance in Java?",
+      "options": [
+        "A mechanism where a class acquires properties from another class",
+        "A way to import packages",
+        "A method to declare variables",
+        "A type of loop"
+      ],
+      "correctAnswer": "A mechanism where a class acquires properties from another class",
+      "language": "Java"
+    },
+    {
+      "question": "What is the purpose of the 'static' keyword in Java?",
+      "options": [
+        "To create class-level members that belong to the class rather than instances",
+        "To prevent method execution",
+        "To declare constants",
+        "To import modules"
+      ],
+      "correctAnswer": "To create class-level members that belong to the class rather than instances",
+      "language": "Java"
+    },
+    {
+      "question": "What is method overriding in Java?",
+      "options": [
+        "Providing a specific implementation of a method in a subclass",
+        "Changing a method's name",
+        "Deleting a method",
+        "Calling a method multiple times"
+      ],
+      "correctAnswer": "Providing a specific implementation of a method in a subclass",
+      "language": "Java"
+    },
+    {
+      "question": "What is an interface in Java?",
+      "options": [
+        "A reference type that contains abstract methods",
+        "A type of class",
+        "A way to import packages",
+        "A method to handle exceptions"
+      ],
+      "correctAnswer": "A reference type that contains abstract methods",
+      "language": "Java"
+    },
+    {
+      "question": "What is the difference between ArrayList and LinkedList?",
+      "options": [
+        "ArrayList uses dynamic array, LinkedList uses doubly linked list",
+        "LinkedList uses dynamic array, ArrayList uses doubly linked list",
+        "They are the same",
+        "ArrayList is deprecated"
+      ],
+      "correctAnswer": "ArrayList uses dynamic array, LinkedList uses doubly linked list",
+      "language": "Java"
+    },
+    {
+      "question": "What is polymorphism in Java?",
+      "options": [
+        "The ability of an object to take many forms",
+        "A type of variable",
+        "A way to import packages",
+        "A method to handle errors"
+      ],
+      "correctAnswer": "The ability of an object to take many forms",
+      "language": "Java"
+    },
+    {
+      "question": "What is the purpose of the 'final' keyword in Java?",
+      "options": [
+        "To prevent modification of variables, methods, or classes",
+        "To mark the end of a program",
+        "To declare constants only",
+        "To import modules"
+      ],
+      "correctAnswer": "To prevent modification of variables, methods, or classes",
+      "language": "Java"
+    },
+    {
+      "question": "What is a constructor in Java?",
+      "options": [
+        "A special method used to initialize objects",
+        "A way to destroy objects",
+        "A type of variable",
+        "A method to handle exceptions"
+      ],
+      "correctAnswer": "A special method used to initialize objects",
+      "language": "Java"
+    },
+    {
+      "question": "What is exception handling in Java?",
+      "options": [
+        "A mechanism to handle runtime errors",
+        "A way to prevent compilation",
+        "A method to import packages",
+        "A type of loop"
+      ],
+      "correctAnswer": "A mechanism to handle runtime errors",
+      "language": "Java"
+    }
+  ],
+  "C++": [
+    {
+      "question": "What is the difference between new and malloc() in C++?",
+      "options": [
+        "new calls constructors, malloc() does not",
+        "malloc() calls constructors, new does not",
+        "They are the same",
+        "malloc() is not available in C++"
+      ],
+      "correctAnswer": "new calls constructors, malloc() does not",
+      "language": "C++"
+    },
+    {
+      "question": "What is a pointer in C++?",
+      "options": [
+        "A variable that stores the address of another variable",
+        "A type of array",
+        "A function",
+        "A way to import libraries"
+      ],
+      "correctAnswer": "A variable that stores the address of another variable",
+      "language": "C++"
+    },
+    {
+      "question": "What is the difference between pass by value and pass by reference?",
+      "options": [
+        "Pass by value copies the value, pass by reference uses the original variable",
+        "Pass by reference copies the value, pass by value uses the original variable",
+        "They are the same",
+        "Pass by reference is deprecated"
+      ],
+      "correctAnswer": "Pass by value copies the value, pass by reference uses the original variable",
+      "language": "C++"
+    },
+    {
+      "question": "What is a destructor in C++?",
+      "options": [
+        "A special member function that cleans up an object",
+        "A way to create objects",
+        "A type of constructor",
+        "A method to import libraries"
+      ],
+      "correctAnswer": "A special member function that cleans up an object",
+      "language": "C++"
+    },
+    {
+      "question": "What is inheritance in C++?",
+      "options": [
+        "A mechanism where a class can inherit properties from another class",
+        "A way to import libraries",
+        "A method to declare variables",
+        "A type of loop"
+      ],
+      "correctAnswer": "A mechanism where a class can inherit properties from another class",
+      "language": "C++"
+    },
+    {
+      "question": "What is the purpose of the 'const' keyword in C++?",
+      "options": [
+        "To declare variables that cannot be modified",
+        "To declare constants only",
+        "To improve performance",
+        "To import libraries"
+      ],
+      "correctAnswer": "To declare variables that cannot be modified",
+      "language": "C++"
+    },
+    {
+      "question": "What is operator overloading in C++?",
+      "options": [
+        "Defining new behavior for existing operators",
+        "Changing operator symbols",
+        "Deleting operators",
+        "Importing operators"
+      ],
+      "correctAnswer": "Defining new behavior for existing operators",
+      "language": "C++"
+    },
+    {
+      "question": "What is a virtual function in C++?",
+      "options": [
+        "A function that can be overridden in derived classes",
+        "A function that doesn't exist",
+        "A type of constructor",
+        "A method to handle errors"
+      ],
+      "correctAnswer": "A function that can be overridden in derived classes",
+      "language": "C++"
+    },
+    {
+      "question": "What is the difference between struct and class in C++?",
+      "options": [
+        "By default, struct members are public, class members are private",
+        "By default, class members are public, struct members are private",
+        "They are the same",
+        "struct is deprecated"
+      ],
+      "correctAnswer": "By default, struct members are public, class members are private",
+      "language": "C++"
+    },
+    {
+      "question": "What is a template in C++?",
+      "options": [
+        "A feature that allows functions and classes to work with generic types",
+        "A way to import libraries",
+        "A type of variable",
+        "A method to handle exceptions"
+      ],
+      "correctAnswer": "A feature that allows functions and classes to work with generic types",
+      "language": "C++"
+    },
+    {
+      "question": "What is the purpose of namespace in C++?",
+      "options": [
+        "To organize code and prevent naming conflicts",
+        "To declare variables",
+        "To import libraries",
+        "To handle errors"
+      ],
+      "correctAnswer": "To organize code and prevent naming conflicts",
+      "language": "C++"
+    },
+    {
+      "question": "What is STL in C++?",
+      "options": [
+        "Standard Template Library",
+        "Simple Type Library",
+        "String Template Library",
+        "Static Type Library"
+      ],
+      "correctAnswer": "Standard Template Library",
+      "language": "C++"
+    }
+  ]
+}
