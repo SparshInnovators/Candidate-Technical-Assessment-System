@@ -1,0 +1,15 @@
+{
+    "name": "assessment-backend-setup",
+    "version": "1.0.0",
+    "description": "Appwrite automated setup and seeding scripts",
+    "type": "module",
+    "scripts": {
+        "setup": "node setup.js",
+        "seed": "node seed.js",
+        "setup:all": "node setup.js && node seed.js"
+    },
+    "dependencies": {
+        "node-appwrite": "^14.0.0",
+        "dotenv": "^16.4.0"
+    }
+}
