@@ -1,0 +1,6 @@
+{
+  "name": "Dynamic Technical Assessment Platform",
+  "description": "A candidate shortlisting platform featuring dynamic multi-language coding assessments, real-time timer systems, comprehensive score analytics, and threshold-gated resume submission.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

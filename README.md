@@ -1,182 +1,111 @@
-# Candidate Technical Assessment System
-## Student Development Task
+# DevAssess.io — Technical Assessment & Screening Platform
 
-### Task Title
-Build a Dynamic Technical Assessment Platform
+A fullstack technical screening and candidate evaluation web application built with **React (JavaScript)**, **Vite**, **Tailwind CSS**, and **Express**.
 
-### Task Description
-Create a web application that helps in candidate shortlisting through a technical assessment process. Candidates can select their preferred programming languages, take a multiple-choice test, and based on their performance, get access to resume upload functionality.
+> **Made by Shashwat Pathak**
 
-### Core Features
-1. **Language Selection Page**
-   - List of programming languages to choose from
-   - Multiple selection allowed
-   - Start test button
+---
 
-2. **Assessment Page**
-   - Multiple choice questions based on selected languages
-   - Next/Previous question navigation
-   - Submit test button
-   - Display current score (optional)
+## 🌟 Overview
 
-3. **Result Page**
-   - Display final score
-   - If score meets threshold:
-     - Show resume upload option
-     - Display success message
-   - If score below threshold:
-     - Show "Try again later" message
+**DevAssess.io** is designed for technical hiring teams and developers. Candidates select their technical stack (JavaScript, TypeScript, Python, Java, C++, Go, Rust, SQL), configure assessment parameters, and complete an interleaved, timed technical evaluation. Candidates who meet the benchmark score (e.g., ≥ 70%) unlock the shortlist portal to upload their resume alongside their verified score verification token.
 
-### Technical Requirements
-- Frontend: HTML, CSS, JavaScript (framework of your choice)
-- Backend: Any language/framework
-- Store questions and answers
-- Basic user session management
-- File upload functionality for resume
+---
 
-### Question Format Example
-```javascript
-{
-    question: "What is the output of: console.log(typeof typeof 1)?",
-    options: [
-        "number",
-        "string",
-        "undefined",
-        "object"
-    ],
-    correctAnswer: "string",
-    language: "JavaScript"
-}
-```
+## 🚀 Key Features
 
-### Steps to Complete
+- **Multi-Language Stack Selection**: Choose from 8 supported languages or select presets (Web Fullstack, Backend & Data).
+- **Dynamic Assessment Engine**: Randomized and difficulty-balanced question pools with syntax snippets and option randomization.
+- **Flexible Timing Modes**: Per-question countdown (60s with auto-advance), overall exam timer (15m), or untimed practice mode.
+- **Question Palette & Navigation**: Live attempted / flagged / unattempted status grid with keyboard shortcuts (`1-4`, `A-D`, `F`, `Arrow Keys`).
+- **Instant Auto-Grading & Analytics**: Visual score radial dial, language proficiency breakdowns, accuracy by difficulty tier (Easy / Medium / Hard), and comprehensive answer explanations.
+- **Threshold-Gated Resume Shortlisting**: Qualified candidates (≥ benchmark score) unlock drag-and-drop resume upload (`.pdf`, `.doc`, `.docx`) with instant application ID and verification certificate export (`JSON`).
+- **Question Repository Modal**: Filterable repository of all verified assessment questions across supported languages.
 
-1. **Create Landing Page**
-   - Design language selection interface
-   - Implement multi-select functionality
-   - Add validation before test starts
+---
 
-2. **Implement Test Interface**
-   - Create question display component
-   - Add answer selection functionality
-   - Implement navigation between questions
-   - Add score calculation
+## 🛠️ Tech Stack & Dependencies
 
-3. **Build Result System**
-   - Create score display
-   - Implement conditional resume upload
-   - Add file type validation for resume
+- **Frontend**: React 18 (JSX), Tailwind CSS v4, Lucide React (Icons), Canvas-Confetti
+- **Backend / Server**: Express.js (Node.js)
+- **Build Tool**: Vite
 
-4. **Add Basic Styling**
-   - Make interface responsive
-   - Add loading states
-   - Include progress indicators
-   - Style form elements
+---
 
-### Bonus Features
-1. **Timer System**
-   - Add countdown timer for each question
-   - Auto-submit when time expires
-   - Display time remaining
+## 📦 Prerequisites
 
-2. **Dynamic Question Sets**
-   - Implement random question selection
-   - Ensure no question repetition
-   - Balance questions across selected languages
+Before running the application, ensure you have:
+- **Node.js**: `v18.0.0` or higher
+- **npm** or **yarn** or **pnpm** / **bun**
 
-3. **Additional Enhancements**
-   - Progress bar
-   - Score analytics
-   - Review wrong answers
-   - Save partial progress
+---
 
-### Notes
-- Maintain clean code structure
-- Include proper error handling
-- Focus on user experience
-- Ensure mobile responsiveness
-- Include loading states
-- Add proper validation messages
+## ⚙️ Installation & Setup
 
-### Example Data Structure
-
-```javascript
-// Question Bank Example
-const questions = {
-    "JavaScript": [
-        {
-            question: "What is closure in JavaScript?",
-            options: ["...", "...", "...", "..."],
-            correctAnswer: 2
-        },
-        // More questions...
-    ],
-    "Python": [
-        {
-            question: "What is the difference between list and tuple?",
-            options: ["...", "...", "...", "..."],
-            correctAnswer: 1
-        },
-        // More questions...
-    ]
-}
-```
-
-### Submission Requirements
-- GitHub repository containing:
-  - Source code
-  - Setup instructions
-  - Sample questions JSON
-  - README file
-
-### Evaluation Criteria
-- Code organization
-- User interface design
-- Error handling
-- Feature implementation
-- Code commenting
-- Mobile responsiveness
-
-### Time Estimate
-- Basic Version: 4-5 hours
-- With Bonus Features: 8-10 hours
-
-### Technical Tips
-1. **Question Management**
-   - Store questions in JSON format
-   - Include at least 10 questions per language
-   - Maintain proper question categorization
-
-2. **Session Handling**
-   - Track user progress
-   - Handle page refreshes
-   - Maintain score data
-
-3. **File Upload**
-   - Limit file types to PDF, DOC, DOCX
-   - Implement file size validation
-   - Add upload progress indicator
-
-4. **For Timer Feature**
-   ```javascript
-   // Timer example structure
-   {
-       questionId: 1,
-       timeLimit: 60, // seconds
-       timeRemaining: 60,
-       status: "active"
-   }
+1. **Clone the repository** (or navigate to the project root directory):
+   ```bash
+   git clone <repository-url>
+   cd devassess-platform
    ```
 
-5. **For Random Questions**
-   - Implement shuffle algorithm
-   - Ensure fair distribution of difficulty
-   - Track used questions
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-### Minimum Requirements to Pass
-- Working language selection
-- Functional quiz system
-- Score calculation
-- Conditional resume upload
-- Basic error handling
-- Mobile responsive design
+3. **Configure Environment Variables (Optional)**:
+   Create a `.env` file based on `.env.example` if needed:
+   ```bash
+   cp .env.example .env
+   ```
+
+---
+
+## ▶️ Running the Application
+
+### 1. Development Mode
+Starts the Express backend server with integrated Vite middleware on port `3000`:
+```bash
+npm run dev
+```
+Open your browser and navigate to:
+```
+http://localhost:3000
+```
+
+### 2. Production Build
+To create an optimized production build and preview it:
+```bash
+npm run build
+npm start
+```
+
+---
+
+## 📁 Project Structure
+
+```
+├── README.md               # Project documentation
+├── package.json            # Project dependencies & scripts
+├── vite.config.js          # Vite and Tailwind configuration
+├── server.js               # Express API server & session management
+├── index.html              # HTML entry point
+└── src/
+    ├── main.jsx            # React root mount
+    ├── App.jsx             # Main application orchestrator
+    ├── index.css           # Global Tailwind CSS styling
+    ├── components/
+    │   ├── Navbar.jsx            # Top navigation bar with phase stepper
+    │   ├── LanguageSelection.jsx # Candidate info & stack selection
+    │   ├── AssessmentTest.jsx    # Question UI, timer & palette
+    │   ├── ResultView.jsx        # Scorecards, analytics & resume upload
+    │   └── QuestionBankModal.jsx # Searchable repository modal
+    └── data/
+        └── questionBank.js       # Comprehensive verified question repository
+```
+
+---
+
+## 👤 Author
+
+**Made with ❤️ by Shashwat Pathak**
