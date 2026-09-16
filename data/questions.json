@@ -1,0 +1,213 @@
+{
+  "JavaScript": [
+    {
+      "question": "What is the output of typeof 1?",
+      "options": ["number", "string", "boolean", "undefined"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which keyword is used to declare a constant?",
+      "options": ["var", "let", "const", "constant"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which method adds an element to the end of an array?",
+      "options": ["push()", "pop()", "shift()", "unshift()"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which symbol is used for strict equality?",
+      "options": ["==", "=", "===", "!="],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which function converts JSON text into an object?",
+      "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.object()"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which keyword is used to define a function?",
+      "options": ["func", "function", "define", "method"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which value represents an empty value?",
+      "options": ["null", "empty", "zero", "false"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which method removes the last element from an array?",
+      "options": ["push()", "pop()", "shift()", "slice()"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which keyword is used to handle errors?",
+      "options": ["check", "try", "error", "handle"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which operator represents logical AND?",
+      "options": ["||", "&&", "!", "&"],
+      "correctAnswer": 1
+    }
+  ],
+
+  "Python": [
+    {
+      "question": "Which keyword is used to define a function?",
+      "options": ["function", "def", "func", "define"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which data type stores multiple ordered values?",
+      "options": ["list", "integer", "boolean", "float"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which symbol is used for comments?",
+      "options": ["//", "#", "/*", "<!--"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which function displays output?",
+      "options": ["echo()", "display()", "print()", "show()"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which keyword creates a class?",
+      "options": ["class", "object", "struct", "define"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which collection does not allow duplicate values?",
+      "options": ["list", "tuple", "set", "string"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which operator is used for exponentiation?",
+      "options": ["^", "**", "//", "%%"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which function returns the length of a list?",
+      "options": ["size()", "length()", "count()", "len()"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which keyword is used for a conditional statement?",
+      "options": ["when", "if", "condition", "check"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which value represents Boolean true?",
+      "options": ["true", "TRUE", "True", "1"],
+      "correctAnswer": 2
+    }
+  ],
+
+  "Java": [
+    {
+      "question": "Which keyword is used to create a class in Java?",
+      "options": ["class", "struct", "object", "define"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which method is the entry point of a Java program?",
+      "options": ["start()", "main()", "run()", "execute()"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which keyword is used to inherit a class?",
+      "options": ["inherits", "extends", "implements", "super"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which data type stores whole numbers?",
+      "options": ["float", "int", "double", "char"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which keyword creates an object?",
+      "options": ["create", "object", "new", "make"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which keyword prevents a class from being inherited?",
+      "options": ["static", "private", "final", "protected"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which symbol ends a statement in Java?",
+      "options": [".", ":", ";", ","],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which concept allows one interface to have multiple implementations?",
+      "options": ["Inheritance", "Polymorphism", "Compilation", "Casting"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which keyword is used to implement an interface?",
+      "options": ["extends", "inherits", "implements", "interface"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which package contains Scanner?",
+      "options": ["java.io", "java.util", "java.lang", "java.net"],
+      "correctAnswer": 1
+    }
+  ],
+
+  "C++": [
+    {
+      "question": "Which symbol is used to end a statement in C++?",
+      "options": [";", ":", ".", ","],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which keyword creates a class?",
+      "options": ["class", "struct", "object", "define"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which function is the entry point of a C++ program?",
+      "options": ["start()", "main()", "run()", "begin()"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which operator accesses members of an object?",
+      "options": [".", "->", "::", "#"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Which data type stores whole numbers?",
+      "options": ["float", "char", "int", "string"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which symbol is used for inheritance?",
+      "options": ["extends", "inherits", ":", "implements"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which header is commonly used for input and output?",
+      "options": ["<stdio.h>", "<iostream>", "<input.h>", "<stream.h>"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which operator represents logical AND?",
+      "options": ["||", "&&", "!", "&"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which keyword dynamically allocates memory?",
+      "options": ["create", "malloc", "new", "object"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which concept allows the same function name with different parameters?",
+      "options": ["Inheritance", "Encapsulation", "Polymorphism", "Abstraction"],
+      "correctAnswer": 2
+    }
+  ]
+}

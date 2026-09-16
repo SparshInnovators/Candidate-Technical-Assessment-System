@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Technical Assessment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>Technical Assessment</h1>
+
+            <p class="subtitle">
+                Select the programming languages you are comfortable with.
+            </p>
+
+            <form id="languageForm">
+
+                <h2>Select Programming Languages</h2>
+
+                <div class="languages">
+
+                    <label class="language-option">
+                        <input
+                            type="checkbox"
+                            name="language"
+                            value="JavaScript"
+                        >
+                        <span>JavaScript</span>
+                    </label>
+
+                    <label class="language-option">
+                        <input
+                            type="checkbox"
+                            name="language"
+                            value="Python"
+                        >
+                        <span>Python</span>
+                    </label>
+
+                    <label class="language-option">
+                        <input
+                            type="checkbox"
+                            name="language"
+                            value="Java"
+                        >
+                        <span>Java</span>
+                    </label>
+
+                    <label class="language-option">
+                        <input
+                            type="checkbox"
+                            name="language"
+                            value="C++"
+                        >
+                        <span>C++</span>
+                    </label>
+
+                </div>
+
+                <p id="errorMessage" class="error"></p>
+
+                <button type="submit">
+                    Start Assessment
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
