@@ -1,0 +1,148 @@
+
+[
+  {
+    "id": "js1",
+    "language": "JavaScript",
+    "question": "Which keyword declares a block-scoped variable that can be reassigned?",
+    "options": ["const", "let", "static", "final"],
+    "correctIndex": 1,
+    "explanation": "The let keyword declares a block-scoped variable that can be reassigned."
+  },
+  {
+    "id": "js2",
+    "language": "JavaScript",
+    "question": "What does typeof null return in JavaScript?",
+    "options": ["null", "undefined", "object", "number"],
+    "correctIndex": 2,
+    "explanation": "typeof null returns object due to a historical JavaScript behavior."
+  },
+  {
+    "id": "js3",
+    "language": "JavaScript",
+    "question": "Which method converts a JSON string into a JavaScript object?",
+    "options": ["JSON.stringify()", "JSON.parse()", "JSON.convert()", "Object.parse()"],
+    "correctIndex": 1,
+    "explanation": "JSON.parse() converts a valid JSON string into a JavaScript value."
+  },
+  {
+    "id": "js4",
+    "language": "JavaScript",
+    "question": "Which array method creates a new array by transforming each element?",
+    "options": ["filter()", "forEach()", "map()", "find()"],
+    "correctIndex": 2,
+    "explanation": "map() returns a new array containing the results of the callback."
+  },
+  {
+    "id": "js5",
+    "language": "JavaScript",
+    "question": "What does an async function return?",
+    "options": ["Always a Promise", "Always a string", "Only undefined", "A callback"],
+    "correctIndex": 0,
+    "explanation": "An async function always returns a Promise."
+  },
+  {
+    "id": "js6",
+    "language": "JavaScript",
+    "question": "Which operator checks both value and type equality?",
+    "options": ["=", "==", "===", "!="],
+    "correctIndex": 2,
+    "explanation": "The strict equality operator === checks value and type."
+  },
+  {
+    "id": "py1",
+    "language": "Python",
+    "question": "Which keyword defines a function in Python?",
+    "options": ["function", "def", "fun", "define"],
+    "correctIndex": 1,
+    "explanation": "Python uses def to define a function."
+  },
+  {
+    "id": "py2",
+    "language": "Python",
+    "question": "Which data structure stores key-value pairs?",
+    "options": ["List", "Tuple", "Dictionary", "Set"],
+    "correctIndex": 2,
+    "explanation": "A Python dictionary stores data as key-value pairs."
+  },
+  {
+    "id": "py3",
+    "language": "Python",
+    "question": "What is the output of len([10, 20, 30])?",
+    "options": ["2", "3", "10", "30"],
+    "correctIndex": 1,
+    "explanation": "The list contains three elements, so len() returns 3."
+  },
+  {
+    "id": "py4",
+    "language": "Python",
+    "question": "Which symbol starts a single-line comment in Python?",
+    "options": ["//", "#", "/*", "--"],
+    "correctIndex": 1,
+    "explanation": "A # symbol starts a single-line comment in Python."
+  },
+  {
+    "id": "py5",
+    "language": "Python",
+    "question": "Which keyword is used to handle an exception?",
+    "options": ["catch", "error", "except", "throws"],
+    "correctIndex": 2,
+    "explanation": "Python uses try and except blocks for exception handling."
+  },
+  {
+    "id": "py6",
+    "language": "Python",
+    "question": "Which list method adds an element to the end?",
+    "options": ["push()", "append()", "insertEnd()", "addLast()"],
+    "correctIndex": 1,
+    "explanation": "append() adds an element to the end of a Python list."
+  },
+  {
+    "id": "java1",
+    "language": "Java",
+    "question": "Which method is the standard entry point of a Java application?",
+    "options": ["start()", "run()", "main()", "init()"],
+    "correctIndex": 2,
+    "explanation": "The standard entry point is public static void main(String[] args)."
+  },
+  {
+    "id": "java2",
+    "language": "Java",
+    "question": "Which keyword is used to inherit a class in Java?",
+    "options": ["implements", "extends", "inherits", "super"],
+    "correctIndex": 1,
+    "explanation": "A Java class uses extends to inherit another class."
+  },
+  {
+    "id": "java3",
+    "language": "Java",
+    "question": "Which collection does not allow duplicate elements?",
+    "options": ["ArrayList", "LinkedList", "HashSet", "Vector"],
+    "correctIndex": 2,
+    "explanation": "HashSet stores unique elements and does not allow duplicates."
+  },
+  {
+    "id": "java4",
+    "language": "Java",
+    "question": "Which keyword prevents a variable from being reassigned after initialization?",
+    "options": ["static", "final", "const", "private"],
+    "correctIndex": 1,
+    "explanation": "A final variable can be assigned only once."
+  },
+  {
+    "id": "java5",
+    "language": "Java",
+    "question": "Which concept allows the same method name with different parameter lists?",
+    "options": ["Overriding", "Encapsulation", "Overloading", "Inheritance"],
+    "correctIndex": 2,
+    "explanation": "Method overloading uses the same method name with different parameter lists."
+  },
+  {
+    "id": "java6",
+    "language": "Java",
+    "question": "Which block is commonly used to execute cleanup code after try/catch?",
+    "options": ["final", "finally", "finish", "complete"],
+    "correctIndex": 1,
+    "explanation": "The finally block is commonly used for cleanup operations."
+  }
+]
+

@@ -1,0 +1,127 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Candidate Technical Assessment Platform">
+  <title>SkillCheck | Technical Assessment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="/" class="brand"><span class="brand-icon">S</span> SkillCheck</a>
+    <span class="header-label">Technical Assessment Platform</span>
+  </header>
+
+  <main class="container">
+    <section id="setup-screen" class="panel">
+      <span class="eyebrow">WELCOME TO SKILLCHECK</span>
+      <h1>Show us what you know.</h1>
+      <p class="muted">Choose your programming language and complete the technical assessment.</p>
+
+      <div class="info-row">
+        <div class="info-box">
+          <span class="info-icon">📝</span>
+          <div><strong>Multiple choice</strong><small>Test your knowledge</small></div>
+        </div>
+        <div class="info-box">
+          <span class="info-icon">🎯</span>
+          <div><strong>70% to qualify</strong><small>Unlock resume upload</small></div>
+        </div>
+      </div>
+
+      <h2>Select programming languages</h2>
+      <p class="muted small">Choose one or more languages to begin.</p>
+
+      <div id="language-list" class="language-grid">
+        <p>Loading available languages...</p>
+      </div>
+
+      <p id="setup-error" class="error" role="alert"></p>
+      <button id="start-btn" class="btn btn-primary" type="button">Start Assessment →</button>
+    </section>
+
+    <section id="assessment-screen" class="panel hidden">
+      <div class="assessment-heading">
+        <div>
+          <span class="eyebrow">TECHNICAL ASSESSMENT</span>
+          <h1>Test your skills</h1>
+        </div>
+        <div class="timer-box">
+          <span>TIME</span>
+          <strong id="timer">20:00</strong>
+        </div>
+      </div>
+
+      <div class="progress-info">
+        <span id="question-count">Question 1 of 10</span>
+        <span id="progress-percent">0% complete</span>
+      </div>
+      <div class="progress-track"><div id="progress-bar"></div></div>
+
+      <div class="question-meta">
+        <span id="question-language" class="pill">JavaScript</span>
+        <span id="answered-count" class="muted small">0 answered</span>
+      </div>
+
+      <h2 id="question-text">Question text</h2>
+      <div id="options-list" class="options-list"></div>
+
+      <div class="question-navigation">
+        <button id="prev-btn" class="btn btn-secondary" type="button">← Previous</button>
+        <button id="next-btn" class="btn btn-primary" type="button">Next →</button>
+      </div>
+
+      <div class="submit-row">
+        <p class="muted small">Review your answers before submitting.</p>
+        <button id="submit-btn" class="btn btn-submit" type="button">Submit Assessment</button>
+      </div>
+      <p id="assessment-error" class="error" role="alert"></p>
+    </section>
+
+    <section id="result-screen" class="panel hidden">
+      <span class="eyebrow">ASSESSMENT COMPLETE</span>
+      <h1 id="result-title">Your results</h1>
+      <p id="result-message" class="muted"></p>
+
+      <div class="result-card">
+        <div class="score-circle">
+          <strong id="score-percent">0%</strong>
+          <span>YOUR SCORE</span>
+        </div>
+        <div class="score-details">
+          <p>Correct answers: <strong id="score-correct">0 / 0</strong></p>
+          <p>Required score: <strong id="score-required">70%</strong></p>
+          <p>Result: <strong id="qualification-status">Pending</strong></p>
+        </div>
+      </div>
+
+      <section id="resume-section" class="resume-section hidden">
+        <h2>🎉 You qualified!</h2>
+        <p class="muted">Upload your resume to complete the application. Accepted formats: PDF, DOC and DOCX. Maximum size: 5 MB.</p>
+        <form id="resume-form">
+          <label for="resume-file">Choose your resume</label>
+          <input id="resume-file" type="file" accept=".pdf,.doc,.docx" required>
+          <button id="upload-btn" class="btn btn-primary" type="submit">Upload Resume</button>
+        </form>
+        <p id="upload-message" role="status"></p>
+      </section>
+
+      <section class="review-section">
+        <h2>Answer review</h2>
+        <div id="review-list"></div>
+      </section>
+
+      <button id="restart-btn" class="btn btn-secondary" type="button">Start New Assessment</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>SkillCheck · Candidate Technical Assessment System</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+                                                                                                                                                 
